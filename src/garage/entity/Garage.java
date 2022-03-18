@@ -7,7 +7,11 @@ public class Garage {
 
 	private static int id = 1;
 	private String name;
-	private ArrayList<Vehicle> vehicles;
+	public ArrayList<Vehicle> vehicles;
+
+	public Garage() {
+		this.vehicles = new ArrayList<>();
+	}
 
 	public Garage(int id, String name) {
 		this.id = id;
@@ -15,15 +19,26 @@ public class Garage {
 		Garage.id++;
 	}
 
-	public void addVehicle(int id) {
-		
+	public Object getName() {
+			return name;
 	}
 	
-	public void removeVehicle() {
-		
+	public void setName(String name) {
+		this.name = name;
+	}	
+
+	public void addVehicle(Vehicle vehicle) {
+		vehicles.add(vehicle);
 	}
 	
-	public void removeVehicle(int id) {
-		
-}
+	public Vehicle removeById(int id) {
+		for (int i = 0; i < vehicles.size(); i++) {
+			Vehicle currentVehicle = vehicles.get(i);
+			if(currentVehicle.getName() == name) {
+				return currentVehicle;
+			}
+		}
+		return null;
+	}
+
 }
