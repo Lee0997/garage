@@ -41,4 +41,20 @@ public class Garage {
 		return null;
 	}
 
+	public Vehicle removeByType(String type) {
+		for (int i = 0; i < type.length(); i++) {
+			Vehicle currentType = vehicles.get(i);
+			String vehicleType = currentType.getType();
+			if(vehicleType == type) {
+				vehicles.remove(currentType);
+			}
+		}
+		return null;
+	}
+	
+	public Vehicle removeAll() {
+		vehicles.clear();
+		System.out.println("Cleared all vehicles");
+		return null;
+	}
 }
