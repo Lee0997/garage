@@ -5,22 +5,16 @@ import java.util.List;
 
 public class Vehicle {
 	private int id;
+	private String name;
 	private String type;
 	private String sound;
 	private int price;
 
 	public Vehicle() {
-		this(0, "Unknown", "Unknown", 0);
+		this(0,"Uknown", "Unknown", "Unknown", 0);
 	}
 
-	public List<String> vehicles = new ArrayList<>();
-
-	public void addVehicle(String x) {
-		vehicles.add(x);
-	}
-
-	public Vehicle(int id, String type, String sound, int price) {
-		// TODO Auto-generated constructor stub
+	public Vehicle(int id, String name, String type, String sound, int price) {
 		super();
 		this.id = id;
 		this.type = type;
@@ -63,5 +57,10 @@ public class Vehicle {
 	public void setPrice(int price) {
 		this.price = price;
 	}
+
+	public String getName() {
+		return name;
+	}
+
 
 }
