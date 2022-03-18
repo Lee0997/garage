@@ -19,9 +19,7 @@ public class Runner {
 		Garage garage = new Garage();
 		garage.setName("Big Garage");
 		System.out.println(garage.getName());
-		vehicles.add("Car");
-		vehicles.add("Helicopter");
-		vehicles.add("Motorbike");
+		
 		
 	}
 
