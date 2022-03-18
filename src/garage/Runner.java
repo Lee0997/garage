@@ -15,11 +15,12 @@ public class Runner {
 		motorbike.setType("Bike");
 		System.out.println(motorbike.getType());
 		motorbike.tyre();
-		
+
 		Garage garage = new Garage();
 		garage.setName("Big Garage");
 		System.out.println(garage.getName());
-
+		
+		
 	}
 
 }
