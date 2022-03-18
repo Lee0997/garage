@@ -1,5 +1,6 @@
 package garage;
 
+import garage.entity.Garage;
 import garage.entity.Vehicle;
 
 public class Runner {
@@ -13,7 +14,10 @@ public class Runner {
 		motorbike.setSound("Brum");
 		motorbike.setType("Bike");
 		System.out.println(motorbike.getType());
-		
+		motorbike.tyre();
+
+
+
 	}
 
 }

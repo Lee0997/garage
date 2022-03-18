@@ -6,6 +6,6 @@ public class Motorbike extends Vehicle {
 		super();
 	}
 	public void tyre() {
-		System.out.println(this.getType() + " has two tires");
+		System.out.println(this.getType() + " has very special tyres");
 	}
 }
